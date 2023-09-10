@@ -12,12 +12,9 @@ ENV LANGUAGE en_US.UTF-8
 
 # Install standard packages
 RUN pip3 install --upgrade pip==23.2.1
-# RUN pip3 install 'requests[security]' \
+RUN pip3 install 'requests[security]'
+#         Install other packages as well, some popular suggestions on the basis of usage are
 #         beautifulsoup4 \
-#         pycrypto \
-#         cryptography \
-#         python-dateutil \
-#         urllib3 \
 #         pyyaml \
 #         matplotlib \
 #         pyspark \
@@ -25,6 +22,5 @@ RUN pip3 install --upgrade pip==23.2.1
 #         scipy \
 #         sympy \
 #         scikit-learn \
-#         nltk \
 #         pandas \
 #         statsmodels
