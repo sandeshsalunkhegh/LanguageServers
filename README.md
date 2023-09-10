@@ -1,4 +1,4 @@
-### Usage# LanguageServers - Language Server Docker Implementations Repository
+# LanguageServers - Language Server Docker Implementations Repository
 
 This repository contains Docker implementations of Language Servers for various programming languages. Language Servers provide language-specific code analysis and rich language features for code editors and Integrated Development Environments (IDEs). By containerizing these Language Servers, you can easily integrate them into your development environment.
 
@@ -28,9 +28,9 @@ Follow these steps to get started with the Language Servers in Docker:
 
 - [Docker](https://docs.docker.com/get-docker/) installed on your system.
 
-### Usage
+## Usage
 
-## For all Language Servers other than C# - .NET
+### For all Language Servers other than C# - .NET
 
 To use this language server, build it first with below command
 ```bash
@@ -41,7 +41,7 @@ Note: Add `linux/x86_64` at the end if you want to run the same in AMD-64 / Linu
 Adjust the port mapping (-p) as needed based on the Language Server's port if you want to expose the language server to a certain port.
 Make sure you expose the port using `EXPOSE <port-number>` in the Dockerfile before the `CMD ['your-iniatiator-command-here']`.
 
-## For C# - .NET Language Server
+### For C# - .NET Language Server
 
 To use this language server, build it first with below command
 ```bash
